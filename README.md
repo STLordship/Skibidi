@@ -1,4 +1,4 @@
 # Skibidi
 dop dop yes yes
 
-20310, 20317, 20326
+Georgi Tetevenski(20310),Ivaylo Tsvetkov(20317),Petur Yosifov(20326)
