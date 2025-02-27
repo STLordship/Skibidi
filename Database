@@ -1,0 +1,37 @@
+create database restorant;
+USE restorant;
+create table Soups (
+   ID int NOT NULL,
+   Soup_name varchar(255) NOT NULL,
+   gramage int NOT NULL,
+   price float NOT NULL
+);
+
+create table Appetizers (
+    ID int NOT NULL,
+    App_name varchar(255) NOT NULL,
+    gramage int NOT NULL,
+    price float NOT NULL
+  );
+  
+create table Main_course (
+	ID int NOT NULL,
+    Course_name varchar(255) NOT NULL,
+    gramage int NOT NULL,
+    price float NOT NULL
+);
+
+Created the database with 3 tables for their respected categories- Soups, Appetizers, Main course.Excuse my broken english skills but I genuinely have no clue how to spell appetizers.
+Hugs and kisses, your database "expert", Ivaylo :)
+
+INSERT INTO Soups(ID, Soup_name, gramage, price) 
+values(1, "Chicken soup", 350, 4.90);
+
+INSERT INTO Appetizers(ID, App_name, gramage, price)
+values(1, "Chips & Dip", 200, 6.70);
+
+INSERT INTO Main_course(ID, Course_name, gramage, price)
+values(1, "Steak frites", 360, 19.90);
+
+
+github devs kys.
