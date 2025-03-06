@@ -2,7 +2,7 @@
 require 'db.php';
 
 function fetchData($pdo, $table, $nameColumn) {
-    $stmt = $pdo->query("SELECT $nameColumn AS name, gramage, price FROM $table");
+    $stmt = $pdo->query("SELECT $nameColumn AS name, gramage, price, calories, allergens FROM $table");
     return $stmt->fetchAll();
 }
 
