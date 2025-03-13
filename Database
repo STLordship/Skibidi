@@ -31,8 +31,13 @@ create table Main_course (
 INSERT INTO Soups(ID, Soup_name, gramage, price, calories, alergens) 
 values(1, "Chicken soup", 350, 4.90, 200, "Chicken");
 
-INSERT INTO Appetizers(ID, App_name, gramage, price)
+INSERT INTO Appetizers(ID, App_name, gramage, price, calories, alergens)
 values(1, "Chips & Dip", 200, 6.70, 170, "Dairy");
 
-INSERT INTO Main_course(ID, Course_name, gramage, price)
+INSERT INTO Main_course(ID, Course_name, gramage, price, calories, alergens)
 values(1, "Steak frites", 360, 19.90, 220, "Meat");
+
+select * from appetizers;
+select * from soups;
+select * from main_course;
+
