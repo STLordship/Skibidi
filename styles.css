@@ -31,8 +31,7 @@ nav {
     flex-wrap: nowrap; /* Prevent wrapping */
     width: 100%;
     overflow-x: auto; /* Add horizontal scrolling if needed */
-    padding-bottom: 20px; /* Add padding to avoid scrollbar overlap */
-    
+    padding-bottom: 20px; /* Add padding to avoid scrollbar overlap */    
 }
 
 .menu-section {
@@ -49,6 +48,7 @@ nav {
 
 .menu-item {
     margin-bottom: 20px;
+    text-decoration: none;
 }
 
 .menu-item img {
@@ -61,4 +61,38 @@ nav {
 .price {
     font-weight: bold;
     color: #d9534f;
+}
+.menu-section a {
+    text-decoration: none;
+    color: inherit; /* Optional: inherit the color from the parent element */
+    display: block; /* Make the anchor tag a block element */
+}
+
+.dish-details {
+    max-width: 600px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    text-align: center;
+    align-items: center;
+}
+
+.dish-details img {
+    width: 100%;
+    max-width: 400px; /* Set a maximum width for the image */
+    max-height: 400px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.dish-details p {
+    margin: 10px 0;
+}
+
+.dish-details strong {
+    font-weight: bold;
 }
