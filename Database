@@ -4,29 +4,35 @@ create table Soups (
    ID int NOT NULL,
    Soup_name varchar(255) NOT NULL,
    gramage int NOT NULL,
-   price float NOT NULL
+   price float NOT NULL,
+   calories float NOT NULL,
+   alergens varchar(255) NOT NULL
 );
 
 create table Appetizers (
     ID int NOT NULL,
     App_name varchar(255) NOT NULL,
     gramage int NOT NULL,
-    price float NOT NULL
+    price float NOT NULL,
+    calories float NOT NULL,
+    alergens varchar(255) NOT NULL
   );
   
 create table Main_course (
 	ID int NOT NULL,
     Course_name varchar(255) NOT NULL,
     gramage int NOT NULL,
-    price float NOT NULL
+    price float NOT NULL,
+    calories float NOT NULL,
+    alergens varchar(255) NOT NULL
 );
 
 
-INSERT INTO Soups(ID, Soup_name, gramage, price) 
-values(1, "Chicken soup", 350, 4.90);
+INSERT INTO Soups(ID, Soup_name, gramage, price, calories, alergens) 
+values(1, "Chicken soup", 350, 4.90, 200, "Chicken");
 
 INSERT INTO Appetizers(ID, App_name, gramage, price)
-values(1, "Chips & Dip", 200, 6.70);
+values(1, "Chips & Dip", 200, 6.70, 170, "Dairy");
 
 INSERT INTO Main_course(ID, Course_name, gramage, price)
-values(1, "Steak frites", 360, 19.90);
+values(1, "Steak frites", 360, 19.90, 220, "Meat");
