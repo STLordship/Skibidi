@@ -15,42 +15,46 @@
     <div id="menu">
         <div class="menu-container">
             <div class="menu-section">
-                    <h2>Appetizers</h2>
+                <h2>Appetizers</h2>
                 <?php foreach ($appetizers as $dish): ?>
-                <div class="menu-item">
-                    <a href="../Сайт/appetizers.php"><img src="../Сайт/images/Appetizer.jpg" alt=""></a>
-                    <h3><?php echo htmlspecialchars($dish['name']); ?></h3>
-                    <p>Gramage: <?php echo htmlspecialchars($dish['gramage']); ?>g</p>
-                    <p class="price">Price: $<?php echo number_format($dish['price'], 2); ?></p>
-                </div>
+                <a href="../Сайт/appetizers.php?name=<?php echo urlencode($dish['name']); ?>" class="menu-item-link">
+                    <div class="menu-item">
+                        <img src="../Сайт/images/Appetizer.jpg" alt="">
+                        <h3><?php echo htmlspecialchars($dish['name']); ?></h3>
+                        <p>Gramage: <?php echo htmlspecialchars($dish['gramage']); ?>g</p>
+                        <p class="price">Price: $<?php echo number_format($dish['price'], 2); ?></p>
+                    </div>
+                </a>
                 <?php endforeach; ?>
             </div>
 
             <div class="menu-section">
                 <h2>Soups</h2>
                 <?php foreach ($soups as $dish): ?>
-                <div class="menu-item">
-                    <a href="../Сайт/soups.php"><img src="../Сайт/images/soup.webp" alt=""></a>
-                    <h3><?php echo htmlspecialchars($dish['name']); ?></h3>
-                    <p>Gramage: <?php echo htmlspecialchars($dish['gramage']); ?>g</p>
-                    <p class="price">Price: $<?php echo number_format($dish['price'], 2); ?></p>
-                </div>
+                <a href="../Сайт/soups.php?name=<?php echo urlencode($dish['name']); ?>" class="menu-item-link">
+                    <div class="menu-item">
+                        <img src="../Сайт/images/soup.webp" alt="">
+                        <h3><?php echo htmlspecialchars($dish['name']); ?></h3>
+                        <p>Gramage: <?php echo htmlspecialchars($dish['gramage']); ?>g</p>
+                        <p class="price">Price: $<?php echo number_format($dish['price'], 2); ?></p>
+                    </div>
+                </a>
                 <?php endforeach; ?>
-            </a>
             </div>
 
             <div class="menu-section">
                 <h2>Main Courses</h2>
                 <?php foreach ($main_courses as $dish): ?>
-                <div class="menu-item">
-                    <a href="/main_course.php"><img src="../Сайт/images/steak.jpg" alt=""></a>
-                    <h3><?php echo htmlspecialchars($dish['name']); ?></h3>
-                    <p>Gramage: <?php echo htmlspecialchars($dish['gramage']); ?>g</p>
-                    <p class="price">Price: $<?php echo number_format($dish['price'], 2); ?></p>
-                </div>
+                <a href="../Сайт/main_course.php?name=<?php echo urlencode($dish['name']); ?>" class="menu-item-link">
+                    <div class="menu-item">
+                        <img src="../Сайт/images/steak.jpg" alt="">
+                        <h3><?php echo htmlspecialchars($dish['name']); ?></h3>
+                        <p>Gramage: <?php echo htmlspecialchars($dish['gramage']); ?>g</p>
+                        <p class="price">Price: $<?php echo number_format($dish['price'], 2); ?></p>
+                    </div>
+                </a>
                 <?php endforeach; ?>
             </div>
-            </a>
         </div>
     </div>
     <script src="script.js"></script>
